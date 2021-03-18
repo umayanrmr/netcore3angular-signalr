@@ -1,0 +1,17 @@
+<h1>Messages</h1>
+<p>Messages from SignalR</p>
+
+<div *ngIf="showimage">
+    Click on bell to show all {{signaldata.length}} messages <i class="fas fa-bell" (click)="showMessage()" ></i>
+</div>
+
+
+
+
+<div *ngIf="!showimage">
+    <h2 *ngFor="let i of signaldata">
+        {{i.information}}
+    </h2>
+
+
+</div>
